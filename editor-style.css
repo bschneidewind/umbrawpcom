@@ -1,0 +1,667 @@
+/*!
+ * Umbra Editor styles
+ */
+.clear:before,
+.entry-content:before,
+.comment-content:before,
+.site-header:before,
+.site-content:before,
+.site-footer:before, .gallery:before, .clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after, .gallery:after {
+  content: "";
+  display: table; }
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after, .gallery:after {
+  clear: both; }
+
+/* Text meant only for screen readers */
+/* =Global
+----------------------------------------------- */
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 25px; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 25px; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */ }
+
+/* Clearing */
+.mobile-space {
+  display: none; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #424046;
+  font-family: "Neuton", serif;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.5; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Vollkorn", serif; }
+
+h1,
+.entry-title {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 25px; }
+
+/* Text elements */
+* {
+  word-wrap: break-word; }
+
+p {
+  margin-bottom: 25px; }
+
+ul, ol {
+  margin: 0 0 25px 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 25px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 25px 25px; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 25px;
+  quotes: '\201c' "'"; }
+  blockquote p:first-of-type:before {
+    content: open-quote; }
+
+q {
+  quotes: '\201c' '\201d'; }
+  q:before {
+    content: open-quote; }
+  q:after {
+    content: close-quote; }
+
+address {
+  margin: 0 0 25px; }
+
+pre {
+  overflow: auto;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  max-width: 100%;
+  background: #f9f9f9;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6; }
+
+code, kbd, tt, var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+th {
+  font-weight: bold; }
+
+.entry-content th, .entry-content td {
+  padding: 5px 10px; }
+.entry-content th {
+  font-weight: normal;
+  color: #b6b3bd;
+  background: #424046; }
+.entry-content td {
+  background: whitesmoke; }
+.entry-content tr:nth-of-type(odd) td {
+  background: #ecebec; }
+
+/* Links */
+a {
+  color: #b5b1bd;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #686273;
+    text-decoration: underline; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+  box-sizing: border-box; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: none;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */ }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  padding: 8px 5px;
+  border: none;
+  border-radius: 0;
+  background: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  button:focus,
+  input[type="button"]:focus,
+  input[type="reset"]:focus,
+  input[type="submit"]:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    outline-color: #c6c6c6; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  padding: 15px 30px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: #524d5d; }
+  button:hover, button:active, button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    background-color: #3a3641; }
+
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  width: 100%;
+  padding: 15px;
+  resize: vertical;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */ }
+  textarea:focus {
+    color: #424046; }
+
+/* =Search Form
+----------------------------------------------- */
+.search-form .search-field {
+  box-sizing: border-box;
+  width: 73%; }
+.search-form .search-submit {
+  box-sizing: border-box;
+  padding: 11px 5px;
+  width: 25%;
+  background-color: #524d5d; }
+  .search-form .search-submit:hover, .search-form .search-submit:focus, .search-form .search-submit:active {
+    background-color: #3a3641; }
+
+/* =Password Protected Form
+----------------------------------------------- */
+.post-password-form input[type='submit'] {
+  padding: 11px 25px; }
+
+/* =Jetpack Subscribe Form
+----------------------------------------------- */
+#subscribe-email {
+  margin-bottom: 0; }
+  #subscribe-email input {
+    padding: 8px 5px; }
+
+#subscribe-email input,
+#subscribe-submit input {
+  width: 100%; }
+
+/* =Global
+----------------------------------------------- */
+.site-content {
+  background-color: white; }
+
+/* =Header
+----------------------------------------------- */
+.site-header-bg {
+  background-color: #424046; }
+
+.site-header {
+  text-align: center; }
+
+.site-image {
+  border-radius: 50%;
+  overflow: hidden; }
+
+.site-title {
+  margin: 25px 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-style: italic; }
+  .site-title a {
+    text-decoration: none; }
+
+.site-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #8f8a99; }
+
+/* =Footer
+----------------------------------------------- */
+.site-footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #8f8a99;
+  text-align: center; }
+  .site-footer p {
+    margin-bottom: 10px; }
+
+/* =Content
+----------------------------------------------- */
+.page-header {
+  margin-bottom: 30px; }
+
+.taxonomy-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  color: #b5b1bd; }
+
+.sticky {
+  /*! Not used. */ }
+
+.hentry {
+  margin: 0 0 60px;
+  position: relative;
+  min-height: 75px; }
+
+.byline,
+.updated {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.entry-header {
+  position: relative; }
+
+.entry-meta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  color: #b5b1bd; }
+  .entry-meta a {
+    color: #e0bc64; }
+    .entry-meta a:hover, .entry-meta a:active, .entry-meta a:focus {
+      text-decoration: underline; }
+  .entry-meta .entry-icons a:hover, .entry-meta .entry-icons a:active, .entry-meta .entry-icons a:focus {
+    text-decoration: none; }
+  .entry-meta .genericon {
+    position: absolute;
+    top: 0;
+    right: -65px;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: #524d5d;
+    background-color: #524d5d;
+    text-align: center; }
+    .entry-meta .genericon:before {
+      font-size: 32px;
+      color: white; }
+    .entry-meta .genericon span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 36px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-size: 0.625rem;
+      font-weight: 700; }
+    .entry-meta .genericon.genericon-comment {
+      top: 50px;
+      color: #e0bc64;
+      background-color: #e0bc64; }
+
+.entry-title,
+.entry-title a,
+.no-title .entry-summary a {
+  color: #524d5d; }
+
+.entry-title,
+.entry-title a {
+  line-height: 1.3;
+  color: #524d5d; }
+
+.entry-footer {
+  font-style: italic;
+  font-size: 16px;
+  font-size: 1rem; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 25px 0 0; }
+  .no-title .page-content, .no-title
+  .entry-content, .no-title
+  .entry-summary {
+    margin-top: 12.5px; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 25px; }
+
+.entry-image {
+  margin: -60px -45px 30px;
+  text-align: center; }
+
+/* =Media
+----------------------------------------------- */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+.wp-caption {
+  margin-bottom: 25px;
+  max-width: 100%;
+  border: none;
+  background: #f9f9f9;
+  color: black; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto 0;
+    max-width: 100%; }
+  .wp-caption .wp-caption-text,
+  .wp-caption .wp-caption-dd {
+    padding: 0.8075em 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-align: center; }
+  .wp-caption p:last-child {
+    margin-bottom: 0; }
+
+.gallery {
+  margin-bottom: 25px; }
+  .gallery .gallery-item {
+    float: left;
+    text-align: center; }
+    .gallery .gallery-item .gallery-icon a {
+      display: block; }
+    .gallery .gallery-item .gallery-icon img {
+      border: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 0; }
+    .gallery .gallery-item .gallery-caption {
+      display: none; }
+  .gallery.gallery-columns-1.gallery-size-medium {
+    display: table; }
+  .gallery.gallery-columns-1.gallery-size-thumbnail, .gallery.gallery-columns-2.gallery-size-thumbnail, .gallery.gallery-columns-3.gallery-size-thumbnail {
+    display: table; }
+
+/* Fluid Gallery Columns
+   works well if you remove the default gallery styling
+   by adding the following to your functions.php
+   add_filter( 'use_default_gallery_style', '__return_false' );
+*/
+.gallery-columns-1 .gallery-item {
+  width: 100%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-1 .gallery-item:nth-of-type(1n - 1) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-2 .gallery-item {
+  width: 49%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-2 .gallery-item:nth-of-type(2n - 2) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-3 .gallery-item {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-3 .gallery-item:nth-of-type(3n - 3) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-4 .gallery-item {
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-4 .gallery-item:nth-of-type(4n - 4) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-5 .gallery-item {
+  width: 18.4%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-5 .gallery-item:nth-of-type(5n - 5) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-6 .gallery-item {
+  width: 15%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-6 .gallery-item:nth-of-type(6n - 6) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-7 .gallery-item {
+  width: 12.57143%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-7 .gallery-item:nth-of-type(7n - 7) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-8 .gallery-item {
+  width: 10.75%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-8 .gallery-item:nth-of-type(8n - 8) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-9 .gallery-item {
+  width: 9.33333%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+.gallery-columns-9 .gallery-item:nth-of-type(9n - 9) {
+  margin-right: 0;
+  clear: right; }
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+html {
+  background-color: #f9f9f9; }
+
+#tinymce {
+  background-color: white;
+  padding: 15px 45px !important;
+  max-width: 580px; }
